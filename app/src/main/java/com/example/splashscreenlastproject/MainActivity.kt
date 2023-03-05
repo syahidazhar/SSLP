@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         backgroundImage.startAnimation(slideAnimation)
 
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, BottomNavActivity::class.java)
 
             startActivity(intent)
             finish()

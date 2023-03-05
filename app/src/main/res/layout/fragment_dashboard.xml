@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEWS"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_below="@+id/titleID"
+        android:id="@+id/subTitleID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a hottest news in da world"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/OutLineBox"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_below="@+id/subTitleID"
+        android:id="@+id/titleLayout"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/ipTitle"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Put your AMAZING title here"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/OutLineBox"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_below="@id/titleLayout"
+        android:id="@+id/imgLayout"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/ipImg"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="URL image here!!"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/OutLineBox"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_below="@id/imgLayout"
+        android:id="@+id/user"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="250dp"
+            android:id="@+id/ipUser"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name of the Creator"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        style="@style/OutLineBox"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_below="@id/imgLayout"
+        android:layout_toRightOf="@+id/user"
+        android:id="@+id/date"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="150dp"
+            android:id="@+id/ipDate"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:hint="Date"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_below="@id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Description"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/descInput"
+        android:layout_below="@+id/descTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="create the most inspirative content"
+        android:textSize="17sp"
+        style="@style/OutLineBox"
+        />
+
+    <Button
+        android:layout_below="@id/descInput"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="GAS KEUN!!"
+        android:layout_marginTop="40dp"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="13dp"
+        />
+</RelativeLayout>
