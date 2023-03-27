@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    android:id="@+id/cv_item">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:weightSum="2"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_red"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asus GX-150 Nvidia"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/creator_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 10.000.000"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

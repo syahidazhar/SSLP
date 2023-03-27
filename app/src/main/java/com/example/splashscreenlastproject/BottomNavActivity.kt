@@ -16,7 +16,7 @@ class BottomNavActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityBottomNavBinding.inflate(layoutInflater)
+        binding = ActivityBottomNavBinding.inflate(layoutInflater)  //????????????????
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
